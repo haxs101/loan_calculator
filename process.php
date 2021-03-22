@@ -15,7 +15,7 @@ if(!empty($_POST['yearSelect'])){
 	echo 'Please select a value!';
   }
 
-$date = date(m-d-y);
+$date = date(y-m-d);
 
 $html = '
 <html>
