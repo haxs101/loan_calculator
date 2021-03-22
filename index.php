@@ -32,7 +32,7 @@
                 type="idNumber" name="idNumber"
                 class="form-control"
                 id="idNumber"
-                
+                readonly="true"
                 placeholder="ID-Number"
               />
             </div>
@@ -53,7 +53,7 @@
               type="text" name="interestRate"
               class="form-control"
               id="termPayment"
-               
+              readonly="true"
               style="width: 300px"
               placeholder="Term of payment"
             />
@@ -79,7 +79,7 @@
                 type="text" name="monthlyPayment"
                 class="form-control"
                 id="monthlyPayment" style="width:250px"
-               
+                readonly="true"
                 placeholder="Monthly Payment"
               />
             </div>
@@ -90,7 +90,7 @@
               type="text"
               class="form-control" name="totalPayment"
               id="totalPayment"
-              
+              readonly="true"
               style="width: 300px"
               placeholder="Total payment"
             />
