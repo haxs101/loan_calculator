@@ -15,7 +15,7 @@ if(!empty($_POST['yearSelect'])){
 	echo 'Please select a value!';
   }
 
-$date = date(y-m-d);
+$date = date('Y-m-d');
 
 $html = '
 <html>
@@ -59,7 +59,7 @@ table thead td { background-color: #EEEEEE;
 <!--mpdf
 <htmlpageheader name="myheader">
 <table width="100%"><tr>
-<td width="50%" style=" "><span style="font-weight: bold; font-size: 14pt;">Loan Receipt</span>
+<td width="50%" style=" "><span style="font-weight: bold; font-size: 14pt;">Loan Receipt</span><br />
 <span>Date: '.$date.'</span></td>
 <td width="50%" style="text-align: right;">ID Number<br /><span style="font-weight: bold; font-size: 9pt;">'.$idNumber.'</span></td>
 </tr></table>
