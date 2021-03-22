@@ -15,6 +15,8 @@ if(!empty($_POST['yearSelect'])){
 	echo 'Please select a value!';
   }
 
+$date = date(m-d-y);
+
 $html = '
 <html>
 <head>
@@ -57,7 +59,8 @@ table thead td { background-color: #EEEEEE;
 <!--mpdf
 <htmlpageheader name="myheader">
 <table width="100%"><tr>
-<td width="50%" style="color:#0000BB; "><span style="font-weight: bold; font-size: 14pt;">Loan Receipt</span></td>
+<td width="50%" style=" "><span style="font-weight: bold; font-size: 14pt;">Loan Receipt</span>
+<span>Date: '.$date.'</span></td>
 <td width="50%" style="text-align: right;">ID Number<br /><span style="font-weight: bold; font-size: 9pt;">'.$idNumber.'</span></td>
 </tr></table>
 </htmlpageheader>
@@ -103,7 +106,7 @@ mpdf-->
 ';
 
 $path = (getenv('MPDF_ROOT')) ? getenv('MPDF_ROOT') : __DIR__;
-require_once $path . 'vendor/autoload.php';
+require_once $path . '/vendor/autoload.php';
 
 $mpdf = new \Mpdf\Mpdf([
 	'margin_left' => 20,
