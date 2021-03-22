@@ -70,6 +70,7 @@
               required
               style="width: 300px"
               placeholder="Loan Amount"
+              pattern="[0-9]+"
             />
           </div>
           <div class="form-row">
