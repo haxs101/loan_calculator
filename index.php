@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="main.css" />
     <body>
       <div class="container">
-      <h1>Loan Cakculator</h1>
+      <h1 style="padding-top:20px; text-align: center;">Loan Calculator</h1>
         <form method="POST" action="process.php">
           <div class="form-row" style="padding-top: 60px">
             <div class="form-group col-md-6">
